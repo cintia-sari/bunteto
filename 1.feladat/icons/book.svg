@@ -1,7 +1,17 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="800px" height="800px" stroke="#fff">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <g> <g> <path d="M491.532,303.238v-25.601H312.695c-23.017,0-43.526,10.883-56.696,27.759c-13.17-16.875-33.679-27.759-56.696-27.759 H20.468v25.601h160.767v30.417H20.468v25.601h30.417h189.907h30.417h189.906h30.417v-25.601H330.766v-30.417H491.532z"/> </g> </g> <g> <g> <polygon points="30.417,389.674 20.468,389.674 0,389.674 0,428.864 240.791,428.864 240.791,398.447 240.791,389.674 "/> </g> </g> <g> <g> <polygon points="491.532,389.674 481.583,389.674 271.208,389.674 271.208,398.447 271.208,428.864 512,428.864 512,389.674 "/> </g> </g> <g> <g> <rect x="240.793" y="83.136" width="30.417" height="104.909"/> </g> </g> <g> <g> <rect x="75.969" y="151.403" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -117.4438 124.1806)" width="30.417" height="104.908"/> </g> </g> <g> <g> <rect x="292.752" y="138.139" transform="matrix(0.3827 -0.9239 0.9239 0.3827 71.4256 413.5925)" width="104.912" height="30.418"/> </g> </g> <g> <g> <rect x="151.587" y="100.889" transform="matrix(0.9239 -0.3827 0.3827 0.9239 -45.9866 75.5046)" width="30.418" height="104.912"/> </g> </g> <g> <g> <rect x="368.374" y="188.656" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -20.8966 357.2806)" width="104.908" height="30.417"/> </g> </g> </g>
-</svg>
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_901_1496)">
+<path d="M29.9337 18.9526V17.3525H18.7564C17.3178 17.3525 16.036 18.0327 15.2129 19.0875C14.3897 18.0328 13.1079 17.3525 11.6694 17.3525H0.492188V18.9526H10.5401V20.8537H0.492188V22.4537H2.39325H14.2624H16.1635H28.0326H29.9337V20.8537H19.8858V18.9526H29.9337Z" fill="white"/>
+<path d="M1.11346 24.3545H0.491652H-0.787598V26.8039H14.2618V24.9028V24.3545H1.11346Z" fill="white"/>
+<path d="M29.9338 24.3545H29.312H16.1636V24.9028V26.8039H31.2131V24.3545H29.9338Z" fill="white"/>
+<path d="M17.3713 5.19604H15.4702V11.7529H17.3713V5.19604Z" fill="white"/>
+<path d="M4.47315 9.75073L3.12891 11.095L7.76518 15.7312L9.10943 14.387L4.47315 9.75073Z" fill="white"/>
+<path d="M22.3722 6.19126L19.8628 12.2493L21.6192 12.9768L24.1286 6.91882L22.3722 6.19126Z" fill="white"/>
+<path d="M10.4689 6.19114L8.7124 6.9187L11.2218 12.9767L12.9782 12.2492L10.4689 6.19114Z" fill="white"/>
+<path d="M28.3682 9.7519L23.7319 14.3882L25.0762 15.7324L29.7125 11.0961L28.3682 9.7519Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_901_1496">
+<rect width="32" height="32" fill="white" transform="translate(0.42041)"/>
+</clipPath>
+</defs>
+</svg>
