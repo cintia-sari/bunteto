@@ -4,59 +4,88 @@
   text-decoration: none;
   margin: 0px;
 }
-nav {
+header {
   background-color: #006633;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  padding: 5px 15px;
+  width: 100%;
+  position: fixed;
+  padding-top: 15px;
 }
 
-nav .left-div,
-nav .right-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header .user-icon {
+  margin-right: 40px;
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-  padding-inline-start: 5px;
-}
-nav ul li a {
-  display: flex;
-  align-items: center;
+header .nav-icon {
+  height: 30px;
   margin-left: 15px;
 }
 
-.nav-icon {
-  padding-right: 5px;
-}
-nav img {
-  height: 25px;
-}
-
-.menu {
-  padding: 5px 15px;
-}
-
-.menu-icon {
-  margin-right: 15px;
-}
-
-.title {
-  font-size: 40px;
-}
-
-.title a {
-  font-size: 15px;
+header .menu-icon {
+  height: 30px;
+  margin: 0 25px 0 10px;
 }
 
 main {
   min-height: 800px;
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .left-menu,
+nav .left-menu div,
+nav .right-menu ul,
+nav .left-menu ul,
+nav .left-menu ul li a {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 5px;
+}
+
+.left-menu h3 {
+  font-size: 41px;
+  display: flex;
+  align-items: last baseline;
+}
+
+.left-menu h3 p {
+  font-size: 20px;
+}
+
+header nav .left-menu li p {
+  padding-left: 5px;
+}
+
 footer {
   background-color: #006633;
   text-align: center;
+}
+
+@media (max-width: 1380px) {
+  .left-menu,
+  .left-menu ul {
+    flex-direction: column;
+  }
+
+  nav .left-menu,
+  nav .left-menu ul {
+    align-items: flex-start;
+  }
+
+  nav .left-menu ul li {
+    margin-top: 30px;
+  }
+  header,
+  header .right-menu,
+  header .left-menu {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
