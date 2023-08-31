@@ -3,7 +3,15 @@
   list-style: none;
   text-decoration: none;
   margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
+
+#menu-toggle {
+  display: none;
+}
+
 header {
   background-color: #006633;
   display: flex;
@@ -15,18 +23,28 @@ header {
   padding-top: 15px;
 }
 
+header label,
+header .left-menu ul,
+header .user-icon,
+header .right-menu {
+  padding: 12px 0;
+}
+
 header .user-icon {
   margin-right: 40px;
+  cursor: pointer;
 }
 
 header .nav-icon {
   height: 30px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 header .menu-icon {
   height: 30px;
-  margin: 0 25px 0 10px;
+  margin: 0 8px 0 10px;
+  cursor: pointer;
 }
 
 main {
@@ -49,6 +67,10 @@ nav .left-menu ul li a {
   padding-inline-start: 5px;
 }
 
+nav .left-menu {
+  align-items: flex-start;
+}
+
 .left-menu h3 {
   font-size: 41px;
   display: flex;
@@ -69,23 +91,55 @@ footer {
 }
 
 @media (max-width: 1380px) {
-  .left-menu,
-  .left-menu ul {
-    flex-direction: column;
+  nav .left-menu ul li {
+    display: none;
   }
 
+  #menu-toggle:checked ~ nav .left-menu ul li {
+    display: block;
+  }
+
+  nav {
+    align-items: flex-start;
+  }
   nav .left-menu,
   nav .left-menu ul {
+    flex-direction: column;
     align-items: flex-start;
   }
 
   nav .left-menu ul li {
     margin-top: 30px;
   }
+
   header,
   header .right-menu,
   header .left-menu {
     align-items: flex-start;
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .right-menu {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ nav .right-menu {
+    display: block;
+    margin-top: 30px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .right-menu {
+    width: 250px;
+  }
+
+  nav .right-menu ul {
+    justify-content: space-between;
   }
 }
