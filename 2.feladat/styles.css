@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.sign-up-window {
+  width: 416px;
+  background-color: #006633;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.close-div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.submit-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.submit-title img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.input-field {
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 1px;
+  padding: 10px 12px;
+}
+
+.check-box-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.check-box-div a {
+  font-weight: 700;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  background-color: #006633;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.subsicription-last-section {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.submit-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: #55ae3a;
+  color: #fff;
+  height: 33px;
+  border-radius: 15px;
+  padding: 0 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.big-envelope-div {
+  display: flex;
+  align-items: flex-end;
+}

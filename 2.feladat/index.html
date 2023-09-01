@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sign-up-window">
+      <div class="close-div">
+        <img src="./icons/window-close.svg" alt="close" />
+      </div>
+      <form action="post">
+        <label class="submit-title"
+          ><img
+            src="./icons/Vector.svg"
+            alt="envelope"
+            class="envelope"
+          />Iratkozz fel hírlevelünkre!</label
+        >
+        <input
+          class="input-field"
+          type="text"
+          name="name"
+          placeholder="Név"
+          required
+        />
+        <input
+          class="input-field"
+          type="text"
+          name="email"
+          placeholder="E-mail cím"
+          required
+        />
+        <div class="subsicription-last-section">
+          <div class="submit-div">
+            <div class="check-box-div">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="data-handling"
+                name="data-handling"
+                required
+              />
+              <label for="data-handling"
+                >Elfogadom az <a href="#">adatkezelési tájékoztatót.</a></label
+              >
+            </div>
+            <button type="submit">
+              <img src="./icons/Emlékeztető.svg" /> Feliratkozás
+            </button>
+          </div>
+
+          <div class="big-envelope-div">
+            <img src="./icons/nagy boríték.svg" alt="big-envelope" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
