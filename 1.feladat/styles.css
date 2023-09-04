@@ -67,20 +67,6 @@ nav .left-menu ul li a {
   padding-inline-start: 5px;
 }
 
-nav .left-menu {
-  align-items: flex-start;
-}
-
-.left-menu h3 {
-  font-size: 41px;
-  display: flex;
-  align-items: last baseline;
-}
-
-.left-menu h3 p {
-  font-size: 20px;
-}
-
 header nav .left-menu li p {
   padding-left: 5px;
 }
@@ -91,6 +77,11 @@ footer {
 }
 
 @media (max-width: 1380px) {
+  nav .left-menu .logo {
+    display: flex;
+    align-items: center;
+  }
+
   nav .left-menu ul li {
     display: none;
   }
@@ -106,6 +97,9 @@ footer {
   nav .left-menu ul {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .left-menu .logo {
+    margin-top: 12px;
   }
 
   nav .left-menu ul li {
