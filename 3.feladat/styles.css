@@ -19,6 +19,10 @@ button {
 
 body {
   background-color: var(--background-color-1);
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .window {
