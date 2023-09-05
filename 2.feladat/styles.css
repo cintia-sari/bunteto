@@ -1,10 +1,13 @@
 body {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto";
   font-weight: 700;
+  height: 100vh;
 }
+
 .sign-up-window {
   width: 416px;
   background-color: #006633;
@@ -12,6 +15,11 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 16px 0 0 16px;
+}
+
+.envelope {
+  width: 36px;
+  height: 28px;
 }
 .close-div {
   display: flex;
@@ -41,7 +49,7 @@ form {
 .input-field {
   border-radius: 20px;
   margin-top: 20px;
-  border: 1px;
+  border: 1px solid #55ae3a;
   padding: 10px 12px;
 }
 
