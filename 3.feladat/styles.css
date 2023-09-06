@@ -4,10 +4,6 @@
   padding: 0px;
 }
 
-button {
-  cursor: pointer;
-}
-
 :root {
   --background-color-1: #b1ddc4;
   --fehér: #fff;
@@ -19,7 +15,7 @@ button {
 
 body {
   background-color: var(--background-color-1);
-  height: 100vw;
+  /*height: 1000px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +43,16 @@ h1 {
   font-weight: 400;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:hover,
+.registration-div button:hover {
+  background-color: var(--zöld);
+  color: var(--fehér);
+}
+
 .registration-div {
   margin-top: 21px;
 }
@@ -54,11 +60,13 @@ h1 {
 .registration-div button {
   width: 133px;
   height: 36px;
+  margin-left: -4px;
 }
 
 .registration-div .registration {
   border-radius: 44px 0px 0px 44px;
   border: 1px solid var(--zöld);
+  border-right: none;
   background: var(--fehér);
   color: var(--sötét-zöld);
 }
@@ -75,6 +83,7 @@ h1 {
   border-radius: 0px 44px 44px 0px;
   border: 1px solid var(--zöld);
   background: var(--sötét-zöld);
+  border-left: none;
 }
 
 .registration-div .entry h2 {
@@ -91,18 +100,23 @@ form {
   flex-direction: column;
 }
 
-form .email-input {
-  margin-bottom: 33px;
+label[for="email"] {
+  visibility: hidden;
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 15px 8px;
 }
 
 form .input-field {
+  height: 36px;
+  width: 260px;
+  padding-left: 6px;
   border-radius: 44px;
   border: 1px solid var(--sötét-zöld);
   background: var(--fehér);
-  width: 266px;
-  height: 36px;
   flex-shrink: 0;
-  padding-left: 6px;
+  color: var(--zöld);
 }
 
 .input-field::placeholder {
@@ -122,31 +136,67 @@ form .input-field {
 }
 
 .question {
-  padding-left: 8.5px;
+  margin-left: -2.5px;
   align-self: flex-start;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  cursor: pointer;
 }
 
-.radio-section {
+.switch {
   align-self: flex-start;
-  margin-left: 14px;
+  margin-left: -4px;
   margin-top: 65px;
   display: flex;
 }
 
-.radio-section h2 {
+.switch h2 {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.312px;
   margin-left: 12px;
 }
 
+.switch input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch input[type="checkbox"]::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 20px;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+}
+
+.switch input[type="checkbox"]:checked::before {
+  left: 15px;
+  background-color: var(--zöld);
+}
+
+.switch input[type="checkbox"]:not(:checked)::before {
+  right: 15px;
+  background-color: var(--sötét-zöld);
+}
+
+.switch input[type="checkbox"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
 .login {
   margin-top: 18px;
-  width: 268px;
+  width: 260px;
   height: 40px;
   border-radius: 44px;
   background: var(--sötét-zöld);

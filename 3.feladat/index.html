@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -26,9 +27,10 @@
           placeholder="Email"
           required
         />
+        <label for="email" class="error-message">Hibás e-mail cím</label>
         <div class="input-field-with-icon">
           <input
-            class="input-field"
+            class="input-field email-input"
             type="password"
             name="password"
             placeholder="Jelszó"
@@ -36,13 +38,15 @@
           />
           <img src="./icons/eye.svg" alt="eye" id="eye" />
         </div>
+        <h2 class="question">Elfelejtetted a jelszavad?</h2>
+        <div class="switch">
+          <input type="checkbox" />
+          <h2>Emlékezz rám</h2>
+        </div>
+        <button class="login"><h2>BEJELENTKEZÉS</h2></button>
+        <script src="script.js"></script>
       </form>
-      <h2 class="question">Elfelejtetted a jelszavad?</h2>
-      <div class="radio-section">
-        <input type="radio" />
-        <h2>Emlékezz rám</h2>
-      </div>
-      <button class="login"><h2>BEJELENTKEZÉS</h2></button>
+
       <div class="vagy-div"><h2 class="vagy">vagy</h2></div>
       <div class="social-meida">
         <a href="#" class="facebook"
