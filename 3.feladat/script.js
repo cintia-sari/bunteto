@@ -1,4 +1,4 @@
-const errorMessages = document.querySelector(".error-message");
+/*const errorMessages = document.querySelector(".error-message");
 const emailInput = document.querySelector(".email-input");
 const questions = document.querySelector(".question");
 const button = document.querySelector(".login");
@@ -20,3 +20,5 @@ emailInput.addEventListener("blur", () => {
     emailInput.style.border = "1px solid var(--sötét-zöld)";
   }
 });
+
+*/

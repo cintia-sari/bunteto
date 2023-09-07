@@ -6,14 +6,15 @@
 
 :root {
   --background-color-1: #b1ddc4;
-  --fehér: #fff;
-  --sötét-zöld: #006633;
-  --fekete: #0000;
-  --szürke: #bfbfbf;
-  --zöld: #55ae3a;
+  --white: #fff;
+  --dark-green: #006633;
+  --black: #0000;
+  --gray: #bfbfbf;
+  --green: #55ae3a;
 }
 
 body {
+  color: var(--dark-green);
   background-color: var(--background-color-1);
   /*height: 1000px;*/
   display: flex;
@@ -25,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--fehér);
+  background-color: var(--white);
   width: 294px;
   height: 611px;
 }
@@ -46,6 +47,9 @@ h1 {
 button {
   cursor: pointer;
 }
+button:hover {
+  background-color: var(--green);
+}
 
 .registration-div {
   margin-top: 21px;
@@ -59,38 +63,42 @@ button {
 
 .registration-div .registration {
   border-radius: 44px 0px 0px 44px;
-  border: 1px solid var(--zöld);
+  border: 1px solid var(--green);
   border-right: none;
-  background: var(--fehér);
+  background: var(--white);
 }
 
 .registration-div .registration h2 {
-  color: var(--sötét-zöld);
+  color: var(--dark-green);
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+
+.registration-div button:hover {
+  background-color: var(--green);
+}
+
+.registration-div .registration:hover h2 {
+  color: var(--white);
 }
 
 .registration-div .entry {
   border-radius: 0px 44px 44px 0px;
-  border: 1px solid var(--zöld);
-  background: var(--sötét-zöld);
+  border: 1px solid var(--green);
+  background: var(--dark-green);
   border-left: none;
 }
 
 .registration-div .entry h2 {
-  color: var(--fehér);
+  color: var(--white);
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
-button:hover,
-.registration-div button:hover {
-  background-color: var(--zöld);
-  color: var(--fehér);
-}
+
 form {
   margin-top: 29px;
   display: flex;
@@ -110,14 +118,26 @@ form .input-field {
   width: 260px;
   padding-left: 6px;
   border-radius: 44px;
-  border: 1px solid var(--sötét-zöld);
-  background: var(--fehér);
+  border: 1px solid var(--dark-green);
+  background: var(--white);
   flex-shrink: 0;
-  color: var(--zöld);
+  color: var(--green);
 }
 
 .input-field::placeholder {
-  color: var(--zöld);
+  color: var(--green);
+}
+
+.email-input {
+  color: var(--green);
+}
+.email-input {
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid red;
+    & ~ .error-message {
+      visibility: visible;
+    }
+  }
 }
 
 #eye {
@@ -133,6 +153,7 @@ form .input-field {
 }
 
 .question {
+  color: #000;
   margin-left: -2.5px;
   align-self: flex-start;
   font-size: 16px;
@@ -140,6 +161,10 @@ form .input-field {
   font-weight: 400;
   line-height: 24px;
   cursor: pointer;
+}
+
+.question:hover {
+  text-decoration: underline;
 }
 
 .switch {
@@ -173,12 +198,12 @@ form .input-field {
 
 .switch input[type="checkbox"]:checked::before {
   left: 15px;
-  background-color: var(--zöld);
+  background-color: var(--green);
 }
 
 .switch input[type="checkbox"]:not(:checked)::before {
   right: 15px;
-  background-color: var(--sötét-zöld);
+  background-color: var(--dark-green);
 }
 
 .switch input[type="checkbox"]::before {
@@ -192,17 +217,17 @@ form .input-field {
 }
 
 .login {
+  border: none;
   margin-top: 18px;
   width: 260px;
   height: 40px;
   border-radius: 44px;
-  background: var(--sötét-zöld);
-  border-bottom: 0;
+  background: var(--dark-green);
 }
 
 .login h2 {
   text-align: center;
-  color: var(--fehér);
+  color: var(--white);
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -210,25 +235,25 @@ form .input-field {
   text-transform: uppercase;
 }
 
-.vagy-div {
+.or-div {
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 292px;
   margin-top: 25px;
-  border-top: 1px solid var(--zöld);
+  border-top: 1px solid var(--green);
 }
 
-.vagy {
+.or {
   position: absolute;
-  color: var(--zöld);
+  color: var(--green);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.63px;
   text-transform: uppercase;
   transform: translateY(-40%);
-  background-color: var(--fehér);
+  background-color: var(--white);
   padding: 0 20px;
 }
 
