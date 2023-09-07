@@ -47,12 +47,6 @@ button {
   cursor: pointer;
 }
 
-button:hover,
-.registration-div button:hover {
-  background-color: var(--zöld);
-  color: var(--fehér);
-}
-
 .registration-div {
   margin-top: 21px;
 }
@@ -68,7 +62,6 @@ button:hover,
   border: 1px solid var(--zöld);
   border-right: none;
   background: var(--fehér);
-  color: var(--sötét-zöld);
 }
 
 .registration-div .registration h2 {
@@ -93,7 +86,11 @@ button:hover,
   font-weight: 700;
   line-height: 24px;
 }
-
+button:hover,
+.registration-div button:hover {
+  background-color: var(--zöld);
+  color: var(--fehér);
+}
 form {
   margin-top: 29px;
   display: flex;

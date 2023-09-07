@@ -8,11 +8,18 @@
   font-weight: 700px;
 }
 
+body {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
 #menu-toggle {
   display: none;
 }
 
 header {
+  min-width: 350px;
   background-color: #006633;
   display: flex;
   justify-content: space-between;
@@ -91,6 +98,7 @@ header nav .left-menu li p {
 }
 
 footer {
+  flex-shrink: 0;
   display: flex;
   background-color: #006633;
   align-items: center;
@@ -102,7 +110,8 @@ footer h6 {
   font-size: 12px;
   font-weight: 400;
 }
-footer @media (max-width: 1380px) {
+
+@media (max-width: 1380px) {
   nav .left-menu .logo {
     display: flex;
     align-items: center;
