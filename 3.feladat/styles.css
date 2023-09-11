@@ -142,10 +142,14 @@ form .input-field {
 
 #eye {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 10px;
   transform: translateY(-40%);
   width: 24px;
+  cursor: pointer;
+}
+#eye:hover {
+  filter: hue-rotate(20deg) saturate(600%) brightness(38%);
 }
 
 .input-field-with-icon {

@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const eyeToggle = document.querySelector("#eye");
+  const passwordInput = document.querySelector("#password-Input");
+
+  eyeToggle.addEventListener("click", () => {
+    console.log("ok");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeToggle.src = "./icons/eye.svg";
+    } else {
+      passwordInput.type = "password";
+      eyeToggle.src = "./icons/eyeoff.svg";
+    }
+  });
+});
+
 /*const errorMessages = document.querySelector(".error-message");
 const emailInput = document.querySelector(".email-input");
 const questions = document.querySelector(".question");
