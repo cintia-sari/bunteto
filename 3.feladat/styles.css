@@ -16,7 +16,7 @@
 body {
   color: var(--dark-green);
   background-color: var(--background-color-1);
-  /*height: 1000px;*/
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;

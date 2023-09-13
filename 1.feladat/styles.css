@@ -98,7 +98,10 @@ header nav .left-menu li p {
 }
 
 footer {
-  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  min-width: 350px;
   display: flex;
   background-color: #006633;
   align-items: center;

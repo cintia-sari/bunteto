@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="window">
+      <div class="file-section">
+        <h2 class="container-title">Banner feltöltése</h2>
+        <div class="up-load-btn-div">
+          <button class="file-btn">
+            <img src="./icons/file.svg" alt="file" />FÁLJ
+          </button>
+          <button class="script-btn">
+            <img src="./icons/script-text.svg" alt="script" />SCRIPT
+          </button>
+        </div>
+        <img class="upload-img" src="./icons/Group 10684.svg" alt="up-load" />
+      </div>
+      <div>
+        <form action="#">
+          <label for="name" class="t-name"
+            ><img class="t" src="./icons/T.svg" alt="T" /> név</label
+          >
+          <input
+            required
+            class="name data-input"
+            type="text"
+            placeholder="Név"
+          />
+          <label class="destination-label destination" for="destination"
+            ><img class="link" src="./icons/link.svg" alt="link" />Célállomás
+            helye</label
+          >
+          <input
+            required
+            class="data-input"
+            type="text"
+            placeholder="Célállomás helye"
+          />
+          <div class="size-div">
+            <div></div>
+            <label class="size-text">
+              <img class="size-img" src="./icons/Size.svg" alt="size" />Méret
+            </label>
+            <div class="size-selector">
+              <div class="size-input-div">
+                <input
+                  class="size-input"
+                  type="radio"
+                  id="size-1"
+                  name="size"
+                  value="728x90"
+                  required
+                />
+                <label for="size-1">728x90</label>
+              </div>
+              <div class="size-input-div">
+                <input
+                  class="size-input"
+                  type="radio"
+                  id="size-2"
+                  name="size"
+                  value="320x100"
+                  required
+                />
+                <label for="size-2">320x100</label>
+              </div>
+
+              <div class="size-input-div">
+                <input
+                  class="size-input"
+                  type="radio"
+                  id="size-3"
+                  name="size"
+                  value="468x60"
+                  required
+                />
+                <label for="size-3">468x60</label>
+              </div>
+              <div class="size-input-div">
+                <input
+                  class="size-input"
+                  type="radio"
+                  id="size-4"
+                  name="size"
+                  value="360x360"
+                  required
+                />
+                <label for="size-4">360x360</label>
+              </div>
+            </div>
+          </div>
+          <div class="lower-btn-div">
+            <button class="basic close">
+              <img src="./icons/close.svg" alt="close" />
+              <h2>MÉGSE</h2>
+            </button>
+            <button id="submit-btn" class="forbidden">
+              <img src="./icons/check.svg" alt="check" />
+              <h2>KÉSZ</h2>
+            </button>
+          </div>
+          <script src="script.js"></script>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
