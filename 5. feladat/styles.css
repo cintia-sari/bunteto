@@ -1,0 +1,202 @@
+* {
+  font-family: "Roboto";
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --background-color-1: #c6e1be;
+  --white: #fff;
+  --dark-green: #006633;
+  --black: #000000;
+  --gray: #bfbfbf;
+  --green: #55ae3a;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--white);
+  /*height: 1000px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  width: 272px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  margin-top: 12px;
+  background-color: var(--background-color-1);
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 272px;
+  height: 32px;
+  background-image: url(./icons/headlin-bacground.png);
+}
+
+.headline .headline-title {
+  transform: skewX(-30deg);
+  width: 134px;
+  height: 32px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline .headline-title img {
+  transform: skewX(30deg);
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+.headline .headline-title h2 {
+  transform: skewX(30deg);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.text-box .user {
+  height: 32px;
+  margin-right: 4px;
+}
+
+.text-box h2 {
+  font-size: 14px;
+  width: 220px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-green);
+  width: 272px;
+  height: 24px;
+}
+
+.card-footer h2 {
+  color: var(--white);
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-footer .football-left {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer .football-left .football img {
+  margin-right: 2px;
+  height: 16px;
+  width: 16px;
+}
+
+.card-footer .football-left .football h2 {
+  color: var(--black);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.card-footer .football-left img {
+  width: 20px;
+  height: 20px;
+  margin: 2px 4px 2px 0;
+}
+
+.card-footer .football-left h2 {
+  color: var(--white);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.date {
+  margin-right: 4px;
+}
+
+.card-footer .football-left .football-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  background-color: var(--background-color-1);
+  transform: skewX(-30deg);
+  margin-left: 12px;
+  height: 24px;
+}
+
+.card-footer .football-left .football-logo img {
+  margin-right: 3.33px;
+  transform: skewX(30deg);
+  height: 16px;
+}
+
+.card-footer .football-left .football-logo h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  transform: skewX(30deg);
+}
+
+.card-footer .football-left .clock {
+}
+button {
+  display: inline-flex;
+  height: 32px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--green);
+  border: none;
+  margin-top: 12px;
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--dark-green);
+  scale: 1.06;
+  box-shadow: 3px 3px 3px var(--black);
+  cursor: pointer;
+}
