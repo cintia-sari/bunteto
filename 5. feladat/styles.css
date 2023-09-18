@@ -99,6 +99,7 @@ body {
 }
 
 .card-footer h2 {
+  margin-right: 4px;
   color: var(--white);
   text-align: right;
   font-size: 12px;
@@ -133,6 +134,7 @@ body {
 }
 
 .card-footer .football-left h2 {
+  margin-right: 4px;
   color: var(--white);
   font-size: 12px;
   font-style: normal;
@@ -140,16 +142,12 @@ body {
   line-height: normal;
 }
 
-.date {
-  margin-right: 4px;
-}
-
 .card-footer .football-left .football-logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 90px;
+  width: 80px;
   background-color: var(--background-color-1);
   transform: skewX(-30deg);
   margin-left: 12px;
@@ -173,6 +171,7 @@ body {
 }
 
 .card-footer .football-left .clock {
+  margin-left: 8px;
 }
 button {
   display: inline-flex;
